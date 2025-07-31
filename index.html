@@ -1,0 +1,256 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SafetyFirst - Security Guard Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="{% static 'img/favicon.ico' %}" rel="icon">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="{% static 'lib/flaticon/font/flaticon.css' %}" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body class="bg-white">
+     <!-- Topbar Start -->
+     <div class="container-fluid">
+        <div class="row bg-secondary py-2 px-lg-5">
+            <div class="col-lg-6 text-center text-lg-left">
+                <div class="d-inline-flex align-items-center">
+                    <p class="mr-2 mb-2 mb-lg-0 text-white">Wireless Sensor </p>
+                    <span class="mb-2 mb-lg-0 text-white">Networks</span>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                
+            </div>
+        </div>
+        <div class="row py-3 px-lg-5">
+            <div class="col-lg-4">
+                <a href="" class="navbar-brand d-none d-lg-block">
+                    <h1 class="m-0 display-5 text-capitalize font-italic"><span class="text-primary">DoS_</span>Attack</h1>
+                </a>
+            </div>
+            <div class="col-lg-8 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-0">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">Safety</span>First</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav m-auto py-4">
+                    <a href="{% url 'index' %}" class="nav-item nav-link active">Home</a>
+                    <a href="{% url 'about' %}" class="nav-item nav-link">About</a>
+                     <a href="{% url 'admin' %}" class="nav-item nav-link">Admin</a>
+                    <a href="{% url 'login' %}" class="nav-item nav-link">User</a>
+                    <a href="{% url 'contact' %}" class="nav-item nav-link">Contact </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0">
+        <div id="blog-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="{% static 'img/carousel-1.jpg' %}" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <h4 class="text-primary m-0">An Integrated Rule-Based and Machine Learning 
+                            Techniques</h4>
+                        <h4 class="display-4 m-0 mt-2 mt-md-3 text-white">DoS Attack Detection in 
+                            WSN</h4>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="{% static 'img/carousel-2.jpg' %}" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <h4 class="text-primary m-0">An Integrated Rule-Based and Machine Learning 
+                            Techniques</h4>
+                        <h4 class="display-4 m-0 mt-2 mt-md-3 text-white">DoS Attack Detection in 
+                            WSN</h4>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#blog-carousel" data-slide="prev">
+                <div class="btn btn-primary rounded-circle" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-prev-icon mb-n2"></span>
+                </div>
+            </a>
+            <a class="carousel-control-next" href="#blog-carousel" data-slide="next">
+                <div class="btn btn-primary rounded-circle" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-next-icon mb-n2"></span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+   
+
+
+    <!-- About Start -->
+    <div class="container-fluid mb-5" style="background: #f6f6f6;">
+        <div class="row align-items-center">
+            <div class="col-lg-6 px-0">
+                <img width="100%" class="img-fluid" src="{%  static 'img/blog-3.jpg' %}" alt="Image">
+            </div>
+            <div class="col-lg-6 py-5 py-lg-0 px-3 px-lg-5">
+                <h5 class="text-primary mb-3">Abstract</h5>
+                <h1 class="mb-4">Wireless Sensor Networks</h1>
+                <p style="text-align:justify;"> Wireless Sensor Networks (WSNs) are highly 
+                    distributed, lightweight nodes, deployed in large numbers to 
+                    monitor systems. Because of the nature of wireless, there are
+                    various challenges for security and threats. An effective 
+                    anomaly detection system is required to find out these attacks,
+                    especially Denial of Service (DoS) attacks. These attacks are the 
+                    major threat to any system connected to the internet. To identify 
+                    the DoS attacks in WSN, Machine Learning (ML) algorithms 
+                    helps to increase the security measures and prevent attacks;
+                    however, makes the system computationally slower. An 
+                    integrated rule-based and ML technique is proposed to quickly 
+                    identify the DoS attacks. Rule-based technique is used to 
+                    differentiate between normal flow and attack, particularly DoS 
+                    attacks. If any flow is an ‘attack’ then ML models are used to 
+                    detect types of DoS attack patterns such as TDMA, Blackhole, 
+                    Grayhole, and Flooding. We have used a decision tree (DT) and 
+                    support vector machine (SVM) classifier with WSN-DS dataset 
+                    to train the proposed model. Analysis of the classifiers shows 
+                    that DT outperforms with a high accuracy to detect the types of
+                    DoS attack. The proposed method is fast and efficient, since it 
+                    avoids the use of ML model if flow is ‘normal’.</p>
+                
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Services Start -->
+    <div class="container pt-5">
+        <div class="d-flex flex-column text-center mb-5">
+            <h5 class="text-primary mb-3">Dos Attack</h5>
+            <h1 class="m-0">Types Of Attacks</h1>
+        </div>
+        <div class="row pb-3">
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="card mb-2 p-3">
+                    <img class="card-img-top" src="{% static 'img/service-1.jpg' %}" alt="">
+                    <div class="card-body bg-secondary d-flex align-items-center p-0">
+                        <h6 class="card-title text-white text-truncate m-0">Blackhole Attack</h6>
+                    </div>
+                    <div class="card-footer">
+                        A Blackhole attack drops all imcoming and outgoing network traffic, effectively isolaing the target device . used in routing-based exploits in ad hoc neworks like MANETs.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="card mb-2 p-3">
+                    <img class="card-img-top" src="{% static 'img/service-2.jpg' %}" alt="">
+                    <div class="card-body bg-secondary d-flex align-items-center p-0">
+                        <h6 class="card-title text-white text-truncate m-0">Gryhole Attack</h6>
+                    </div>
+                    <div class="card-footer">
+                        A gryhole attac selectively drops packets,unlike a blackhole attack that drops all traffic.identifying gryhole attackers often  requires statistical analysis of packet delivery rates over time.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="card mb-2 p-3">
+                    <img class="card-img-top" src="{% static 'img/service-4.jpg' %}" alt="">
+                    <div class="card-body bg-secondary d-flex align-items-center p-0">
+                        <h6 class="card-title text-white text-truncate m-0">TDAM Attack</h6>
+                    </div>
+                    <div class="card-footer">
+                        TDAM refers to attacks where attackers manipulate network traffic by altering its routing paths.TDAM is more effective in distributed environments like SDNs or large-scale networks.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="card mb-2 p-3">
+                    <img class="card-img-top" src="{% static 'img/service-5.jpg' %}" alt="">
+                    <div class="card-body bg-secondary d-flex align-items-center p-0">
+                        <h6 class="card-title text-white text-truncate m-0">Flooding Attack</h6>
+                    </div>
+                    <div class="card-footer">
+                        Flooding attacks overwhelm the target system with excessive traffic ,exhausting its resources or bandwidth.flooding attacks are used,leveraging botnets for massive traffic generatin.
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-3">
+            <div class="col-lg-3 col-md-12 mb-5">
+                <h1 class="mb-3 display-5 text-capitalize font-italic text-white"><span class="text-primary">Safety</span>First</h1>
+                <p class="m-0" style="text-align:justify;">An 
+                    integrated rule-based and ML technique is proposed to quickly 
+                    identify the DoS attacks. Rule-based technique is used to 
+                    differentiate between normal flow and attack, particularly DoS 
+                    attacks.</p>
+            </div>
+            
+           
+                    <div class="col-md-3 mb-5">
+                        <h5 class="text-primary mb-4">Quick Links</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Admin</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>User</a>
+                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                   
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary border back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    
