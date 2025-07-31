@@ -1,0 +1,624 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SafetyFirst - Security Guard Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="{% static 'img/favicon.ico' %}" rel="icon">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="{% static 'lib/flaticon/font/flaticon.css' %}" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+
+    <style>
+         body {
+            background-image: url("{% static 'img\carousel-1.jpg' %}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+          
+        .file-drop-area{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background:linear-gradient(to right, #6fccf1,#e9adeb);
+            color: #d7d7ef;
+            font-family: 'LATO' ,sans-serif;
+            
+          }
+          
+          .choose-file-button{
+          
+            flex-shrink: 0;
+            background-color: rgba(255,255,255,0.04);
+            border:1px solid rgba(255,255,255,0.1);
+            border-radius: 3px;
+            padding:8px 15px;
+            margin-right: 10px;
+            font-size: 12px;
+            text-transform: uppercase;
+          
+          }
+          
+          .file-message{
+          
+            font-size: small;
+            font-weight: 300;
+            line-height: 1.4;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          
+          .file-input{
+            position: absolute;
+            left: 0;
+            top:0;
+            height: 300%;
+            widows: 100%;
+            cursor: pointer;
+            opacity: 0;
+          
+          }
+          .preview-image {
+            max-width: 500px; /* Decrease the maximum width */
+            max-height: 300px; /* Decrease the maximum height */
+            margin: 10px;
+        }
+        button {
+            width: 100px;
+            height: 40px;
+            cursor: pointer;
+            color: #fff;
+            font-size: 17px;
+            border-radius: 1rem;
+            border: none;
+            position: relative;
+            background-color: rgba(255,255,255,0.04);
+            border:1px solid rgba(255,255,255,0.1);
+            transition: 0.1s;
+          }
+    </style>
+</head>
+<!-- body -->
+
+<body class="bg-white">
+     <!-- Topbar Start -->
+     <div class="container-fluid">
+        <div class="row bg-secondary py-2 px-lg-5">
+            <div class="col-lg-6 text-center text-lg-left">
+                <div class="d-inline-flex align-items-center">
+                    <p class="mr-2 mb-2 mb-lg-0 text-white">Wireless Sensor </p>
+                    <span class="mb-2 mb-lg-0 text-white">Networks</span>
+                </div>
+            </div><!----
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <p class="m-0 mr-1 text-white">Follow Us:</p>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div><!-->
+        </div>
+        <div class="row py-3 px-lg-5" style="background-color:white;">
+            <div class="col-lg-4">
+                <a href="" class="navbar-brand d-none d-lg-block">
+                    <h1 class="m-0 display-5 text-capitalize font-italic"><span class="text-primary">DoS_</span>Attack</h1>
+                </a>
+            </div><!----
+            <div class="col-lg-8 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <div class="d-inline-flex flex-column text-center pr-3 border-right">
+                        <h6>Our Office</h6>
+                        <p class="m-0">Syamala Nagar, Rajahmundry</p>
+                    </div>
+                    <div class="d-inline-flex flex-column text-center px-3 border-right">
+                        <h6>Email Us</h6>
+                        <p class="m-0">rg.techprojects@gmail.com</p>
+                    </div>
+                    <div class="d-inline-flex flex-column text-center pl-3">
+                        <h6>Call Us</h6>
+                        <p class="m-0"> +918500221170</p>
+                    </div>
+                </div>
+            </div><!-->
+        </div>
+    </div>
+    <!-- Topbar End -->
+      <!-- Navbar Start -->
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-0">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">Safety</span>First</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav m-auto py-4">
+                    <a href="{% url 'userdashboard' %}" class="nav-item nav-link">My Dashboard</a>
+                    <a href="{% url 'predict_attack_type' %}" class="nav-item nav-link active">DOS Attacks Detect</a>
+                     <a href="{% url 'profile' %}" class="nav-item nav-link">My Profile</a>
+                    <a href="{% url 'userfeedbacks' %}" class="nav-item nav-link">Feedback</a>
+                    <a href="{% url 'userlogout' %}" class="nav-item nav-link">Logout </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+    
+    <br><br>
+    <html lang="en">
+
+   
+
+   
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .card {
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .form-control {
+            border-radius: 0.25rem;
+            transition: border-color 0.2s;
+        }
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .text-center {
+            margin-top: 20px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #17a2b8;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #17a2b8;
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #138496;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+
+    </style>
+<br><br><br><br> 
+<body>
+
+    <div class="container">
+        <div class="row" style="margin-top: 1px;">
+            <!-- Left Column: Form -->
+            <div class="col-md-12">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="shadow-lg card bg-white rounded" style="width: 100%;">
+                        <div class="file-drop-area">
+                            <h2>DOS Attack Detection</h2>
+                            <form method="POST" action="/predict/"> <!-- Update action URL as needed -->
+                                {% csrf_token %}
+    
+                                <label for="id">ID:</label>
+                                <select id="id" name="id" required>
+                                    <option value="" disabled selected>Select ID</option>
+                                    <option value="111011">111011</option>
+                                    <option value="111058">111058</option>
+                                    <option value="601080">601080</option>
+                                    <option value="110009">110009</option>
+                                    <option value="105043">105043</option>
+                                </select>
+    
+                                <label for="Time">Time:</label>
+                                <select id="Time" name="Time" required>
+                                    <option value="" disabled selected>Select Time</option>
+                                    <option value="553">553</option>
+                                   <option value="553">553</option>
+                                    <option value="2003">2003</option>
+                                    <option value="503">503</option>
+                                    <option value="253">253</option>
+                                </select>
+    
+                                <label for="Is_CH">Is_CH:</label>
+                                <select id="Is_CH" name="Is_CH" required>
+                                    <option value="" disabled selected>Select Is_CH</option>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                  <option value="1">1</option>
+                                  <option value="1">1</option>
+                                  <option value="1">1</option>
+                                </select>
+    
+                                <label for="who CH">Who CH:</label>
+                                <select id="who CH" name="who CH" required>
+                                    <option value="" disabled selected>Select Who CH</option>
+                                    <option value="111044">111044</option>
+                                    <option value="111058">111058</option>
+                                    <option value="601100">601100</option>
+                                    <option value="110009">110009</option>
+                                    <option value="105043">105043</option>
+                                </select>
+    
+            
+                                <label for="Dist_To_CH">Dist_To_CH:</label>
+                                <select id="Dist_To_CH" name="Dist_To_CH" required>
+                                    <option value="" disabled selected>Select Distance To CH</option>
+                                    <option value="21.46301">21.46301</option>
+                                    <option value="0">0</option>
+                                   <option value="0">0</option>
+                                   <option value="0">0</option>
+                                   <option value="0">0</option>
+                                  
+    
+                        
+                                </select>
+    
+                                <label for="ADV_S">ADV_S:</label>
+                                <select id="ADV_S" name="ADV_S" required>
+                                    <option value="" disabled selected>Select ADV_S</option>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                  <option value="1">1</option>
+                                    <option value="7">7</option>
+                                    <option value="1">1</option>
+                                </select>
+    
+                                <label for="ADV_R">ADV_R:</label>
+                                <select id="ADV_R" name="ADV_R" required>
+                                    <option value="" disabled selected>Select ADV_R</option>
+                                    <option value="4">4</option>
+                                    <option value="3">3</option>
+                                   <option value="25">25</option>
+                                    <option value="16">16</option>
+                                    <option value="6">6</option>
+                                </select>
+    
+                                <label for="JOIN_S">JOIN_S:</label>
+                                <select id="JOIN_S" name="JOIN_S" required>
+                                    <option value="" disabled selected>Select JOIN_S</option>
+                                    <option value="1">1</option>
+                                    <option value="0">0</option>
+                                    <option value="0">0</option>
+                                    <option value="0">0</option>
+                                  <option value="0">0</option>
+                                </select>
+    
+                                <label for="JOIN_R">JOIN_R:</label>
+                                <select id="JOIN_R" name="JOIN_R" required>
+                                    <option value="" disabled selected>Select JOIN_R</option>
+                                    <option value="0">0</option>
+                                    <option value="38">38</option>
+                                    <option value="0">0</option>
+                                  <option value="23">23</option>
+                                  <option value="17">17</option>
+                                </select>
+    
+                                <label for="SCH_S">SCH_S:</label>
+                                <select id="SCH_S" name="SCH_S" required>
+                                    <option value="" disabled selected>Select SCH_S</option>
+                                    <option value="0">0</option>
+                                  <option value="38">38</option>
+                                  <option value="0">0</option>
+                                  <option value="0">0</option>
+                                  <option value="1">1</option>
+                                </select>
+    
+                                <label for="SCH_R">SCH_R:</label>
+                                <select id="SCH_R" name="SCH_R" required>
+                                    <option value="" disabled selected>Select SCH_R</option>
+                                    <option value="1">1</option>
+                                  <option value="0">0</option>
+                                  <option value="0">0</option>
+                                  <option value="0">0</option>
+                                  <option value="0">0</option>
+                                </select>
+    
+                                <label for="Rank">Rank:</label>
+                                <select id="Rank" name="Rank" required>
+                                    <option value="" disabled selected>Select Rank</option>
+                                    <option value="5">5</option>
+                                    <option value="0">0</option>
+                                  <option value="0">0</option>
+                                  <option value="0">0</option>
+                                  <option value="0">0</option>
+                                </select>
+    
+                                <label for="DATA_S">DATA_S:</label>
+                                <select id="DATA_S" name="DATA_S" required>
+                                    <option value="" disabled selected>Select DATA_S</option>
+                                    <option value="85">85</option>
+                                  <option value="0">0</option>
+                                  <option value="0">0</option>
+                                  <option value="0">0</option>
+                                  <option value="0">0</option>
+                                </select>
+    
+                                <label for="DATA_R">DATA_R:</label>
+                                <select id="DATA_R" name="DATA_R" required>
+                                    <option value="" disabled selected>Select DATA_R</option>
+                                    <option value="0">0</option>
+                                  <option value="0">0</option>
+                                  <option value="0">0</option>
+                                    <option value="1173">1173</option>
+                                    <option value="1105">33</option>
+                                </select>
+    
+                                <label for="Data_Sent_To_BS">Data Sent To BS:</label>
+                                <select id="Data_Sent_To_BS" name="Data_Sent_To_BS" required>
+                                    <option value="" disabled selected>Select Data Sent To BS</option>
+                                    <option value="0">0</option>
+                                  <option value="0">0</option>
+                                  <option value="0">0</option>
+                                    <option value="51">51</option>
+                                    <option value="33">33</option>
+                                </select>
+    
+                                <label for="dist_CH_To_BS">Distance CH To BS:</label>
+                                <select id="dist_CH_To_BS" name="dist_CH_To_BS" required>
+                                    <option value="" disabled selected>Select Distance CH To BS</option>
+                                    <option value="0">0</option>
+                                    <option value="0">0</option>
+                                    <option value="0">0</option>
+                                    <option value="159.31297">159.31297</option>
+                                    <option value="145.08942">145.08942</option>
+                                </select>
+    
+                                <label for="send_code">Send Code:</label>
+                                <select id="send_code" name="send_code" required>
+                                    <option value="" disabled selected>Select Send Code</option>
+                                    <option value="2">2</option>
+                                    <option value="0">0</option>
+                                  <option value="0">0</option>
+                                  <option value="0">0</option>
+                                  <option value="0">0</option>
+                                
+                                </select>
+    
+                                <label for="Expanded Energy">Expanded Energy:</label>
+                                <select id="Expanded Energy" name="Expanded Energy" required>
+                                    <option value="" disabled selected>Select Expanded Energy</option>
+                                    <option value="0.144">0.144</option>
+                                    <option value="0.00723">0.00723</option>
+                                    <option value="0.00446">0.00446</option>
+                                    <option value="2.43378">2.43378</option>
+                                    <option value="2.04667">2.04667</option>
+                                </select>
+    
+                                <button type="submit">Predict</button>
+                            </form>
+    
+                            {% if attack_status %}
+                            <div>
+                                <h2>{{ attack_status }}</h2>
+                            </div>
+                            <h3>Prediction Probabilities:</h3>
+                            <ul>
+                                {% for attack, probability in prediction_probabilities.items %}
+                                    <li>{{ attack }}: {{ probability }}%</li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+    
+        
+        
+    </div>
+</div>        
+<br><br><br><br><br><br>
+<!-- Footer Start -->
+<div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
+    <div class="row pt-3">
+        <div class="col-lg-3 col-md-12 mb-5">
+            <h1 class="mb-3 display-5 text-capitalize font-italic text-white"><span class="text-primary">Safety</span>First</h1>
+            <p class="m-0" style="text-align:justify;">An 
+                integrated rule-based and ML technique is proposed to quickly 
+                identify the DoS attacks. Rule-based technique is used to 
+                differentiate between normal flow and attack, particularly DoS 
+                attacks.</p>
+        </div><!----
+        <div class="col-md-3 mb-5">
+            <h5 class="text-primary mb-4">About Us</h5>
+            <p style="text-align:justify;">Revanth Global Technologies offers training, internships, and final-year projects for students in fields such as B.E, B.Tech, M.E, M.Tech, M.C.A, M.B.A, and Ph.D.</p>
+        </div><!-->
+       
+                <div class="col-md-3 mb-5">
+                    <h5 class="text-primary mb-4">Quick Links</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Admin</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>User</a>
+                        <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                    </div>
+                </div>
+               <!----
+                <div class="col-md-3 mb-5">
+                    <h5 class="text-primary mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>Syamala Nagar, Rajahmundry</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+918500221170</p>
+                    <p><i class="fa fa-envelope mr-2"></i>rg.techprojects@gmail.com</p>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div><!-->
+            </div>
+        </div>
+    </div><!----
+    <div class="row pt-3">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+            <p class="m-0 text-white">
+                &copy; <a class="text-white font-weight-bold" href="#"></a>. All Rights Reserved. Designed by
+                <a class="text-white font-weight-bold" href="https://htmlcodex.com">Revanth Global Solutions</a>
+            </p>
+        </div>
+       
+    </div><!-->
+</div>
+<!-- Footer End -->
+
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-secondary border back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="{% static 'lib/easing/easing.min.js' %}"></script>
+<script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+<script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+<script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+<!-- Contact Javascript File -->
+<script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+<script src="{% static 'mail/contact.js' %}"></script>
+
+<!-- Template Javascript -->
+<script src="{% static 'js/main.js' %}"></script>
+ {% if messages %}
+{% for message in messages %}
+{% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+<script>swal({
+       title: "Success!",
+       text: "{{message}}",
+       icon: "success",
+       button: "OK",
+   });
+</script>
+
+{% elif message.level == DEFAULT_MESSAGE_LEVELS.WARNING %}
+<script>swal({
+       title: "Warning :)",
+       text: "{{message}}",
+       icon: "warning",
+       button: "OK",
+    
+   });
+</script>
+{% elif message.level == DEFAULT_MESSAGE_LEVELS.INFO %}
+<script>swal({
+       title: "info :)",
+       text: "{{message}}",
+       icon: "info",
+       button: "OK",
+   });
+</script>
+{% elif message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+<script>swal({
+       title: "error :)",
+       text: "{{message}}",
+       icon: "error",
+       button: "OK",
+   });
+</script>
+{% endif %}
+{% endfor %}
+{% endif %}
+</body>
+</html>

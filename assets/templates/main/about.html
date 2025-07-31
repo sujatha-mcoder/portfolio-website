@@ -1,0 +1,247 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SafetyFirst - Security Guard Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="{% static 'img/favicon.ico' %}" rel="icon">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="{% static 'lib/flaticon/font/flaticon.css' %}" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body class="bg-white">
+     <!-- Topbar Start -->
+     <div class="container-fluid">
+        <div class="row bg-secondary py-2 px-lg-5">
+            <div class="col-lg-6 text-center text-lg-left">
+                <div class="d-inline-flex align-items-center">
+                    <p class="mr-2 mb-2 mb-lg-0 text-white">Wireless Sensor </p>
+                    <span class="mb-2 mb-lg-0 text-white">Networks</span>
+                </div>
+            </div>
+            <!----
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <p class="m-0 mr-1 text-white">Follow Us:</p>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div> <!-->
+        </div>
+        <div class="row py-3 px-lg-5">
+            <div class="col-lg-4">
+                <a href="" class="navbar-brand d-none d-lg-block">
+                    <h1 class="m-0 display-5 text-capitalize font-italic"><span class="text-primary">DoS_</span>Attack</h1>
+                </a>
+            </div><!----
+            <div class="col-lg-8 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <div class="d-inline-flex flex-column text-center pr-3 border-right">
+                        <h6>Our Office</h6>
+                        <p class="m-0">Syamala Nagar, Rajahmundry</p>
+                    </div>
+                    <div class="d-inline-flex flex-column text-center px-3 border-right">
+                        <h6>Email Us</h6>
+                        <p class="m-0">rg.techprojects@gmail.com</p>
+                    </div>
+                    <div class="d-inline-flex flex-column text-center pl-3">
+                        <h6>Call Us</h6>
+                        <p class="m-0"> +918500221170</p>
+                    </div>
+                </div>
+            </div><!-->
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 mb-5">
+        <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-0">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">Safety</span>First</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav m-auto py-4">
+                    <a href="{% url 'index' %}" class="nav-item nav-link ">Home</a>
+                    <a href="{% url 'about' %}" class="nav-item nav-link active">About</a>
+                     <a href="{% url 'admin' %}" class="nav-item nav-link">Admin</a>
+                    <a href="{% url 'login' %}" class="nav-item nav-link">User</a>
+                    <a href="{% url 'contact' %}" class="nav-item nav-link">Contact </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid mb-5" style="background: #f6f6f6;">
+        <div class="row align-items-center">
+            <div class="col-lg-6 px-0">
+                <img width="100%" class="img-fluid" src="{%  static 'img/about.jpg' %}" alt="Image">
+            </div>
+            <div class="col-lg-6 py-5 py-lg-0 px-3 px-lg-5">
+                <h5 class="text-primary mb-3">About Us</h5>
+                <p style="text-align:justify;">Over the last few years, WSNs have gained popularity 
+                    across industries and within the research community. WSN is 
+                    a network made up of numerous sensor devices that spread 
+                    across over the large area to captured environmental
+                    conditions. WSN nodes communicate with each other and 
+                    transmit the information without wire to central device which 
+                    act a base station (BS) for storage and analysis. These sensor 
+                    networks operate in remote and challenging environments, 
+                    and face security issues due to their limited energy, power and 
+                    computing resources. Past research on security challenges in 
+                    WSNs, categorizes threats, and introduces a generic security 
+                    model tailored to address these concerns . The nature of 
+                    WSNs is ad-hoc and has susceptibility to the attacks and 
+                    security. Security is a major challenge in ad-hoc nature 
+                    networks due to their constrained resources are battery power, 
+                    storage, memory and bandwidth, and processing capabilities. 
+                    Furthermore, as they operate in unsupervised environments, 
+                    these nodes are vulnerable to attacks. These attacks deplete 
+                    node resources, particularly power, and disrupt their 
+                    functions, making them some of the most common threats to 
+                    WSNs are DoS attack, node compromising attack, Sybil 
+                    attack, jamming attack, eavesdropping attack, etc.. DoS are
+                    one of the popular attacks out of that attack on WSNs.
+                    . There 
+                    are four types of DoS attacks namely—Blackhole, Grayhole, 
+                    Flooding, TDMA attacks .
+                    Investigating these attacks is critical for improving the 
+                    security, reliability, and efficiency of the WSN. To protect the 
+                    integrity of the surveillance systems that maintain continuous
+                    operations in real-world applications such as smart grid 
+                    systems , healthcare , financial trading etc. It is 
+                    essential that DoS attacks to be identified and countered. It is
+                    important to ensure the security of WSN from DoS attacks, an 
+                    effective intrusion detection system (IDS) is required to 
+                    indentify various DoS attacks. ML classifier is used to detect 
+                    attack WSN-DS dataset . ML based techniques usually 
+                    suffer with overfitting or under fitting problem, moreover, it 
+                    is a trained model not programmed. In our study, we proposed 
+                    an integrated approach of rule-based and ML based technique.
+                    In WSNs, prevention based techniques such as cryptography 
+                    are resource-intensive and less suitable. Detection based
+                    methods including misuse/signature detection and anomaly 
+                    detection are more appropriate. Misuse detection identifies 
+                    known attack patterns but not new ones.</p>
+               
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-3">
+            <div class="col-lg-3 col-md-12 mb-5">
+                <h1 class="mb-3 display-5 text-capitalize font-italic text-white"><span class="text-primary">Safety</span>First</h1>
+                <p class="m-0" style="text-align:justify;">An 
+                    integrated rule-based and ML technique is proposed to quickly 
+                    identify the DoS attacks. Rule-based technique is used to 
+                    differentiate between normal flow and attack, particularly DoS 
+                    attacks.</p>
+            </div><!----
+            <div class="col-md-3 mb-5">
+                <h5 class="text-primary mb-4">About Us</h5>
+                <p style="text-align:justify;">Revanth Global Technologies offers training, internships, and final-year projects for students in fields such as B.E, B.Tech, M.E, M.Tech, M.C.A, M.B.A, and Ph.D.</p>
+            </div><!-->
+           
+                    <div class="col-md-3 mb-5">
+                        <h5 class="text-primary mb-4">Quick Links</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Admin</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>User</a>
+                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                   <!----
+                    <div class="col-md-3 mb-5">
+                        <h5 class="text-primary mb-4">Get In Touch</h5>
+                        <p><i class="fa fa-map-marker-alt mr-2"></i>Syamala Nagar, Rajahmundry</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+918500221170</p>
+                        <p><i class="fa fa-envelope mr-2"></i>rg.techprojects@gmail.com</p>
+                        <div class="d-flex justify-content-start mt-4">
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div><!-->
+                </div>
+            </div>
+        </div>
+        <div class="row pt-3"><!----
+            <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white">
+                    &copy; <a class="text-white font-weight-bold" href="#"></a>. All Rights Reserved. Designed by
+                    <a class="text-white font-weight-bold" href="https://htmlcodex.com">Revanth Global Solutions</a>
+                </p>
+            </div>
+           
+        </div><!-->
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary border back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+    <script src="{% static 'mail/contact.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
